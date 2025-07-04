@@ -22,7 +22,7 @@ export const Education = () => {
                     <p>Full Stack Web Development</p>
                     <p>Masai School, Remote</p>
                     <p>Focused on MERN Stack, DSA, and real-world projects</p>
-                    <p>July 2024 – April 2025 (Ongoing)</p>
+                    <p>August 2024 – May 2025 (Ongoing)</p>
                 </div>
                 <div className='date d1'></div>
             </div>
@@ -35,9 +35,8 @@ export const Education = () => {
                 </div>
                 <div className='educardDet edd2'>
                     <p>Bachelor of Computer Applications (B.C.A)</p>
-                    <p>Radha Govind University, Ramgarh, Jharkhand</p>
-                    <p>First Year – Ranchi University</p>
-                    <p>2024 – Present</p>
+                    <p>Radha Govind University,Lalki Ghati, Ramgarh, Jharkhand</p>
+                    <p>2025 – 2028 | Pursuing (1st Year)</p>
                 </div>
                 <div className='date d2'></div>
             </div>

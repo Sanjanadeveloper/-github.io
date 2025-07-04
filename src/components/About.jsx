@@ -36,22 +36,6 @@ export const About = () => {
             </p>
           </div>
 
-          {/* <div id="mysitem">
-            <div>
-              <GoTriangleRight
-                style={{
-                  color: light ? "#dc143c" : "#64ffda",
-                  fontSize: "20px",
-                }}
-              />
-            </div>
-            <p>
-              Pursuing <span>BCA at Radha Govind University</span> and Full Stack Web
-              Development at Masai School — focusing on real-world skills and
-              hands-on projects.
-            </p>
-          </div> */}
-
           <div id="mysitem">
             <div>
               <GoTriangleRight
