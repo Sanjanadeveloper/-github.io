@@ -94,7 +94,7 @@ export const Home = () => {
             </div>
             <div>
               <a
-                href="https://github.com/Sanjanadeveloper/Sanjana-kumari"
+                href="https://github.com/Sanjanadeveloper"
                 target="_blank"
               >
                 <BsGithub className="homeIc" />

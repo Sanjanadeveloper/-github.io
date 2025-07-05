@@ -60,7 +60,7 @@ export const Contact = () => {
                     </div>
                     <div className='contactOption'>
                         <BsGithub className='contactIcon' />
-                        <a href='https://github.com/Sanjanadeveloper/Sanjana-kumari' target='_blank'>GitHub</a>
+                        <a href='https://github.com/Sanjanadeveloper' target='_blank'>GitHub</a>
                     </div>
                     <div className='contactOption'>
                         <BsLinkedin className='contactIcon' />
