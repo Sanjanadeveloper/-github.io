@@ -37,6 +37,24 @@ export const Home = () => {
     });
   }, []);
 
+  // ✅ Open in new tab + download
+  const handleDownloadAndOpen = () => {
+    const resumePath = "/resume/Sanjana_Kumari_Resume.pdf";
+
+    // 1. Open in new tab
+    window.open(resumePath, "_blank");
+
+    // 2. Trigger download (with slight delay for compatibility)
+    setTimeout(() => {
+      const link = document.createElement("a");
+      link.href = resumePath;
+      link.setAttribute("download", "Sanjana_Kumari_Resume.pdf");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }, 500); // 0.5s delay
+  };
+
   return (
     <div id="home" style={{ "--bglight": light ? "#edf2f8" : "#0a192f" }}>
       <div
@@ -52,31 +70,16 @@ export const Home = () => {
         <p>
           I'm a <span>&nbsp;Software Developer.</span>
         </p>
-        {/* <p>
-          First-year BCA student and passionate Full Stack Developer skilled in
-          JavaScript, React.js, and backend integration. I build responsive,
-          scalable web apps with clean code and strong problem-solving skills.
-          Enthusiastic about DSA and eager to contribute to impactful,
-          team-driven projects.
-        </p> */}
         <p>
           I have a specialization in MERN stack web development. Self-motivated
-          and curious to learn new things. lets build something new.
+          and curious to learn new things. Let's build something new.
         </p>
 
         <div className="homeCont">
-          <a
-            href="/resume/Sanjana_kumari_Resume.pdf"
-            style={{ textDecoration: "none" }}
-            download="Sanjana_Kumari_Resume.pdf"
-          >
-            <button>
-              Resume{" "}
-              <i>
-                <BiDownload />
-              </i>
-            </button>
-          </a>
+          <button onClick={handleDownloadAndOpen}>
+            Resume <BiDownload />
+          </button>
+
           <div
             className="homeIcCont"
             style={{ "--icColor": light ? "#0a192f" : "#edf2f8" }}
