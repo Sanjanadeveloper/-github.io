@@ -7,21 +7,9 @@ import { SiGmail } from "react-icons/si";
 import TagCloud from "TagCloud";
 
 const myTags = [
-  "JavaScript",
-  "CSS",
-  "HTML",
-  "Redux",
-  "React Router",
-  "React",
-  "TypeScript",
-  "GIT",
-  "MongoDB",
-  "Express",
-  "NodeJs",
-  "Mongoose",
-  "ChakraUI",
-  "Tailwind",
-  "Babel",
+  "JavaScript", "CSS", "HTML", "Redux", "React Router",
+  "React", "TypeScript", "GIT", "MongoDB", "Express",
+  "NodeJs", "Mongoose", "ChakraUI", "Tailwind", "Babel"
 ];
 
 export const Home = () => {
@@ -37,22 +25,19 @@ export const Home = () => {
     });
   }, []);
 
-  // ✅ Open in new tab + download
   const handleDownloadAndOpen = () => {
-    const resumePath = "/resume/Sanjana_Kumari_Resume.pdf";
+    const resumePath = "/resume/Sanjana_kumari_Resume.pdf"; // ✅ updated
 
-    // 1. Open in new tab
     window.open(resumePath, "_blank");
 
-    // 2. Trigger download (with slight delay for compatibility)
     setTimeout(() => {
       const link = document.createElement("a");
       link.href = resumePath;
-      link.setAttribute("download", "Sanjana_Kumari_Resume.pdf");
+      link.setAttribute("download", "Sanjana_kumari_Resume.pdf");
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-    }, 500); // 0.5s delay
+    }, 500);
   };
 
   return (
@@ -67,9 +52,7 @@ export const Home = () => {
       >
         <p>Hi, I am</p>
         <p>Sanjana kumari.</p>
-        <p>
-          I'm a <span>&nbsp;Software Developer.</span>
-        </p>
+        <p>I'm a <span>&nbsp;Software Developer.</span></p>
         <p>
           I have a specialization in MERN stack web development. Self-motivated
           and curious to learn new things. Let's build something new.
@@ -85,18 +68,12 @@ export const Home = () => {
             style={{ "--icColor": light ? "#0a192f" : "#edf2f8" }}
           >
             <div>
-              <a
-                href="https://www.linkedin.com/in/sanjana-kumari-050aa6314/"
-                target="_blank"
-              >
+              <a href="https://www.linkedin.com/in/sanjana-kumari-050aa6314/" target="_blank" rel="noopener noreferrer">
                 <BsLinkedin className="homeIc" />
               </a>
             </div>
             <div>
-              <a
-                href="https://github.com/Sanjanadeveloper"
-                target="_blank"
-              >
+              <a href="https://github.com/Sanjanadeveloper" target="_blank" rel="noopener noreferrer">
                 <BsGithub className="homeIc" />
               </a>
             </div>
@@ -109,10 +86,7 @@ export const Home = () => {
         </div>
       </div>
       <div>
-        <div
-          className="content"
-          style={{ order: 1, "--color": light ? "#dc143c" : "#64ffda" }}
-        ></div>
+        <div className="content" style={{ order: 1, "--color": light ? "#dc143c" : "#64ffda" }}></div>
       </div>
     </div>
   );
