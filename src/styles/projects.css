@@ -75,6 +75,16 @@
     font-weight: 600;
 }
 
+.prCardContent>p:nth-child(3) {
+    color: #716767 !important;
+    font-weight: 500;
+}
+
+.prCardContent>p:nth-child(3)>span {
+    color: var(--namelight);
+    font-weight: 600;
+}
+
 .prCardTs {
     display: flex;
     gap: 10px;

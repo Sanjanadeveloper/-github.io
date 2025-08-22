@@ -19,9 +19,11 @@ import {
   SiMongodb,
   SiGit,
   SiNetlify,
+  SiTailwindcss,
 } from "react-icons/si";
 import blueMercury from "../assets/Screenshot (667).png";
 import edusityImg from "../assets/Screenshot (702).png";
+import quickBlogsImg from "../assets/Screenshot (102).png";
 
 
 export const Projects = () => {
@@ -43,6 +45,63 @@ export const Projects = () => {
           <GoProject />
         </span>
       </p>
+      
+      {/* Quick Blogs */}
+      <div className="projectCard">
+        <div className="prCardImg">
+          <img src={quickBlogsImg} alt="Quick Blogs Project Screenshot" />
+        </div>
+        <div className="prCardContent">
+          <p>Quick Blogs - AI-Powered Blogging Platform</p>
+          <p>
+            A modern, full-stack blogging platform built with React, Node.js, and MongoDB, 
+            featuring AI-powered content generation using Google Gemini AI. The platform 
+            offers a clean, responsive design with rich content display, interactive 
+            commenting system, and category filtering. For administrators, it provides 
+            AI-powered content generation, rich text editor, image management with ImageKit, 
+            and comprehensive blog management features including draft system and analytics.
+          </p>
+          <p>
+            <span>Tech Stack: </span>React.js, Node.js, MongoDB, Express.js, Tailwind CSS, 
+            Google Gemini AI, ImageKit, JWT, Quill.js
+          </p>
+
+          <div className="prCardTs">
+            <SiReact style={{ color: "#53c1de" }} className="tsIc" />
+            <SiNodedotjs style={{ color: "green" }} className="tsIc" />
+            <SiMongodb style={{ color: "green" }} className="tsIc" />
+            <SiExpress style={{ color: "black" }} className="tsIc" />
+            <SiTailwindcss style={{ color: "#38bdf8" }} className="tsIc" />
+            <SiCss3 style={{ color: "#1c88c7" }} className="tsIc" />
+            <SiJavascript
+              style={{ color: "#f7df1e", background: "black" }}
+              className="tsIc"
+            />
+          </div>
+          <div style={{ "--icBg": light ? "transparent" : "#0a192f" }}>
+            <a
+              style={{ textDecoration: "none" }}
+              href="https://quick-blog-frontend-ten.vercel.app/"
+              target="_blank"
+            >
+              <button>
+                <FaEye className="tsBIc" /> Go live
+              </button>
+            </a>
+            <a
+              style={{ textDecoration: "none" }}
+              href="https://github.com/Sanjanadeveloper/Quick-Blog"
+              target="_blank"
+            >
+              <button>
+                {" "}
+                <SiGithub className="tsBIc" /> View code
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* Blue Mercury */}
       <div className="projectCard">
         <div className="prCardImg">
